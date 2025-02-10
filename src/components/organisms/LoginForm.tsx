@@ -8,6 +8,7 @@ export function LoginForm() {
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        console.log('Form submitted');
     };
     return (
         <div className="p-4 border rounded shadow-md">
