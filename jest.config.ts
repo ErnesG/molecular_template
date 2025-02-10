@@ -3,7 +3,9 @@ export default {
     testEnvironment: 'jest-environment-jsdom',
     setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
     transform: {
-        '^.+\\.tsx?$': 'ts-jest'
+        '^.+\\.tsx?$': ['ts-jest', {
+            tsconfig: 'tsconfig.test.json'
+        }]
     },
-    moduleFileExtensions: ['js','ts', 'tsx', 'jsx', 'json', 'node']
+    moduleFileExtensions: ['js', 'ts', 'tsx', 'jsx', 'json', 'node']
 }
